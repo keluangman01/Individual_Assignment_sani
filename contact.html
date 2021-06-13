@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+    <script language="JavaScript">
+        function form(){
+            var name = document.forms["forum"]["nama"].value;
+            var telephone = document.forms["forum"]["no"].value;
+            var email = document.forms["forum"]["mail"].value;
+            var address = document.forms["forum"]["add"].value;
+            var submit = document.forms["forum"]["submit"].value;
+            var gender = document.forms["forum"]["gender"].value;
+
+           if(name == ""){
+              alert("You Forgot Your Name!");
+              return false;
+           }
+
+           if(telephone == ""){
+              alert("You Forgot Your Telephone Number!");
+              return false;
+           }
+
+           if(email == ""){
+             alert("You Forgot Your Email Address!");
+             return false;
+           }
+           if(address == ""){
+             alert("You Forgot Your Address!");
+             return false;
+           }
+           if(gender == ""){
+             alert("What is your gender?");
+             return false;
+           }
+           if(submit == "Send"){
+             alert("Call me Baby ;)");
+             return false;
+           }
+
+       }
+        
+ 
+        
+    </script>
+</head>
+<body>
+    <centre>
+        <div class="menu">
+                <ul>
+                    <li><a class="active" href="Individual assignment 264.html">Home</a></li>   
+                    <li><a href="origin.html">Origins</a></li>
+                    <li><a href="Things.html">Things I Like</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+        
+        <h1>Think im good? Hit me up!</h1><br>
+
+        <div class="aue">
+        <div class="container">
+            <div class="title">Registration</div>
+            <form name="forum" action="#" onsubmit="return form()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="nama" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" name="no" placeholder="Enter your phone number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="mail" placeholder="Enter your Email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" name="add" placeholder="Enter your Address">
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Neutral</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" name="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+        <footer>
+            <a href="https://www.facebook.com/sani.mahazir"><img src="media/bxl-facebook-square.svg"></a>
+            <a href="https://www.instagram.com/m.sunny001/"><img src="media/bxl-instagram-alt.svg"></a>
+            <a href="https://discordapp.com/users/532793441177042965"><img src="media/bxl-discord.svg"></a>
+            <a href="https://wa.link/s1zezt"><img src="media/bxl-whatsapp.svg"></a>
+    
+            <div class="copyright">Copyright 2021 by ⓇSunny Industries</div>
+        </footer>
+       </centre>
+</body>
+</html>
